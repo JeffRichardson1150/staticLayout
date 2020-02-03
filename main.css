@@ -1,0 +1,150 @@
+/* from 99 pen assignment */
+body {
+    background-color: black;
+    margin: 5px;
+}
+
+img {
+/*    object-fit: contain; */
+    /* display: block; */
+}
+
+#flexListHeader {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  margin: 10px 10px 10px 45px;
+
+}
+
+#navigationBar {
+    position: fixed;
+    display: flex;
+    align-content: space-between;
+    top: 20px;
+    left: 60px;
+    z-index: 999;
+}
+
+#navigationBar a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  width: 80px;
+  color: white;
+}
+
+.page1Pic {
+    margin: 0;
+    top: 0px;
+    background-image: url("https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdSSO8K-GxfF6nFpPPKUU-3YjTa98xvOXALIPH7xFR9zHJ21pebR_51wEWgg1Y_7qHD0iKY9RZ95jVe6VCIsUjcGEAyM.webp?r=fa9");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*
+    box & boxImg are used to scale the logo image on top of the previously placed bacground image
+        box is an outer container. the image will be in a separate container inside this container
+        boxImg is a container that holds the image (bc I defined the id in html as the image)
+*/
+#box {
+    margin: 5px;
+    position: absolute;
+    left: 50px;
+    top: 20vh;
+    height: 80vh;  
+    width: 80vh; 
+}
+/*  a container that holds the logo image  */
+#boxImg { 
+        max-width: 100%;
+    }
+
+#playButton {
+  position: absolute;
+  top: 25em;
+  left: 5em; 
+}
+
+#moreInfoButton {
+  position: absolute;
+  top: 25em;
+  left: 15em; 
+}
+
+#playButton a { 
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#moreInfoButton a { 
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Create the flexbox rows */
+
+ul.myList,
+  ul.myList li.myListItem {
+    /* resetting the list to remove the bullet points, margin, and padding */
+    list-item: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.myList {
+    /* setting up my flex stuff */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* flex-start = left */
+    align-content: space-between;
+    overflow-x: auto;
+    margin-top: 0;
+    margin-left: 45px;
+    margin-bottom: 50px;
+  }
+    
+  /* remove the scrollbar */
+  ul.myList::-webkit-scrollbar {
+        display: none;
+    }
+
+  ul.myList li.myListItem {
+    border: 1px solid black;
+    flex-basis: 200px;
+  }
+
+  ul.myList li.myListItem img {
+    /* The originals are 341px x 192px */
+    /* width:80%; */
+  }
+
+#secondFeature p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+ #secondFeature img {
+   margin: 30px 0 0 50px;
+     /* float: left; */
+}
