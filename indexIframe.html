@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mainIframe.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <a name="home"></a>
+
+    <div id="navigationBar">
+        <a href="#home" target="blank">Home</a>
+        <a href="https://www.hulu.com/welcome" target="blank">TV Shows</a>
+        <a href="https://www.hulu.com/welcome" target="blank">Movies</a>
+        <a href="https://www.hulu.com/welcome" target="blank">Latest</a>
+        <a href="#myListAnchor">My List</a>
+    </div>
+
+    <div class="page1Pic">
+        <div id="box">
+            <img id="boxImg"
+                src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/TsSRXvDuraoJ7apdkH6tsHhf-ZQ/AAAABXc-NZ_-wzinAc6WoZWIPLfCLL2BZuEf7ix5GcS2hKG_qWmwKNAiGR1Xh0GsueCkbjgUyYTohpyrWWh565BEbHsOiRY2JrCUS4OZupb0PtOBMtHHyn45Eo4WruCfAKEAcKc80WFCceyvNK_3k1izSh7MOGZ5lAs4sg6mwgrqjmBXYQ.webp?r=618">
+        </div>
+
+        <iframe id="iframePlayButton" title="Inline Frame Example" width="300" height="200" src=""
+            name="playButtonIframe">
+        </iframe>
+
+
+        
+        <!-- found this video element by Inspecting a youtube video.  It didn't run  -->
+        <!-- <div id="blobAutoplay">
+            <video autoplay muted loop playsinline class="video-stream html5-main-video"
+                controlslist="nodownload" style="width: 671px; height: 377px; left: 0px; top: 0px;"
+                src="blob:https://www.youtube.com/7b9957d5-359f-4538-80bb-556c3ca4ff56">
+            </video>
+            
+        </div> -->
+        
+
+        <!-- <div class="html5-video-container" data-layer="0">
+            <video tabindex="-1" class="video-stream html5-main-video"
+                controlslist="nodownload" style="width: 671px; height: 377px; left: 0px; top: 0px;"
+                src="blob:https://www.youtube.com/7b9957d5-359f-4538-80bb-556c3ca4ff56">
+            </video>
+            
+        </div> -->
+
+        */
+
+        <div id="playButton">
+
+            <!-- <button onclick="playFunction()">Play</button> -->
+            <a href="https://www.youtube.com/embed/ohgkYc6-6vc" target="playButtonIframe">Play</a>
+            <!-- <iframe id="iframePlayButton" title="Inline Frame Example" width="300" height="200"
+                    src="https://www.youtube.com/embed/ohgkYc6-6vc" name="playButtonIframe">
+                </iframe>  -->
+
+            <!-- <a href="https://www.youtube.com/embed/ohgkYc6-6vc" target="blank">Play</a> -->
+            <!-- <a href="https://www.youtube.com/embed/ohgkYc6-6vc" width="300" height="200">Play</a> -->
+        </div>
+        <div id="moreInfoButton">
+            <a href="https://www.hulu.com/welcome" target="blank">More Info</a>
+        </div>
+    </div>
+
+    <a name="myListAnchor"></a>
+    <br />
+    <br />
+    <!--
+    Create the My List scroll bar
+-->
+
+    <p id="flexListHeader">My List</p>
+
+    <ul class="myList">
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1vxaDhilh-OiUbeR3UMhHTwx0VIkrYIb4"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=14KWR7yXmmfgGQH1-Z6zDmbcvtpWbDyWB"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1eDNsxRZ1_LJ57vgMNDmU2iVps11k5Qy0"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=12JEj7XkHOunTN42YjHNnHQYQZT5vzm6_"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1ElWTVwObIIjRVdJgGuZj4sqPvXwxPzsP"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1NrULvxmu-hLClhyt0M7q1E_hp6Yl82BG"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1IFuMz-i2TXhlhDCeoT700KUJDW2bcaTE"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1sllqJIfPyYYyeuf-gFU2lcMEHwixw748"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1QJ20_ijHM1JonB-InJr85JFK67PdI-ql"></li>
+    </ul>
+
+    <!--
+    Create the New Releases scroll bar
+-->
+
+    <p id="flexListHeader">New Releases</p>
+
+    <ul class="myList">
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1B4ZkfVKgVLdd7jlceIER4LKr9l8TS17t"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1rJGPYJ1suaxAAfJjmybZtphEnuX4DZf4"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1adQLrNw28ILnim9I4xooZVaW8YGShlYp"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1S0pa_bZW6bnyJ_efXHAXUuvxU_7ZEWjk"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=13wOnQa8cwOh3b9Mz2XjMpEaUbS4opmMa"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1GEMDHhldidU4r6mMRGIQ-OtM_MFoC5vu"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1h-3vIBXEGFob8jvHhXs3mm-1g-ZQq3TL"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1DTbFB2AsMWcer-nNCCvjkPZ4pDpOOFSH"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=142I9VEoNQqN_WPKzFNxsd_6qqLvOgPO0"></li>
+    </ul>
+    <!--
+    Create the Continue Watching scroll bar
+-->
+
+    <p id="flexListHeader">Continue Watching</p>
+
+    <ul class="myList">
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1pQq54FpXMw5LbvQXxUhEdm7SCAw7n-G6"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1H5PgBM0u3WL9fA5M71ICmG-l2zyL_9hv"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=16usoJlNjnbxSx7VdIGJrb8CjZ5eMhYAy"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1vhpOO2JGmMZmPvThPcDbDZUmfw-MgIVR"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=14LBvrGo2zpJm2H_R03-i4WCCcs2amcgD"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1ZMq3oux23T1Q2hs7BtniRvbEJEgw6Rf5"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1xm6P-03vUFkGATVaX1I7F0ipMUql_1qD"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1vb4JCLwImo9x0OGCDiiDcGNtTNjw909n"></li>
+        <li class="myListItem"><img src="https://drive.google.com/uc?id=1M-wwe547hnJGLmgq0rvYI4DRtjOoCirQ"></li>
+    </ul>
+    <!--
+    Create the Trending Now scroll bar
+-->
+
+    <p id="flexListHeader">Trending Now</p>
+
+    <ul class="myList">
+        <li class="myListItem"><img src="./assets/myList1.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList2.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList3.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList4.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList5.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList6.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList7.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList8.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList9.jpg"></li>
+    </ul>
+
+    <!--
+    Second Feature
+-->
+    <div id="secondFeature">
+
+        <!-- <p><img src="./assets/secondFeature.jpg">Text to the right of the picture</p> -->
+        <img src="./assets/secondFeature.jpg">
+        <img
+            src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/TsSRXvDuraoJ7apdkH6tsHhf-ZQ/AAAABeAkgmKdIrYwjARZQYnvRwtgG0pbFODLlEMj8hROUs5fSOTv2eW5RtXtOIkAyewQeC02wHjc59kIpHUc3onLzK2IEx__DOBoXQH7cFC0J7LdpyExmkT5ufCmqgbRL_NlZ_wVfLae6W3hKTINPa1l8I7YFlW64554nvbrA0NWhS9t2w.webp?r=291">
+        <!-- <p>Text to the right of the picture</p> -->
+    </div>
+
+    <!--
+    Create the Critically Acclaimed Sitcoms scroll bar
+-->
+
+    <br />
+    <br />
+    <br />
+
+    <p id="flexListHeader">Critically Acclaimed Sitcoms</p>
+
+    <ul class="myList">
+        <li class="myListItem"><img src="./assets/myList1.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList2.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList3.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList4.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList5.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList6.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList7.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList8.jpg"></li>
+        <li class="myListItem"><img src="./assets/myList9.jpg"></li>
+    </ul>
+
+    <script type="text/javascript" src="static.js"></script>
+
+
+</body>
